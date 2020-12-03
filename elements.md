@@ -1,7 +1,8 @@
 ---
 layout: page
-title: Elements
+title: About Me
 nav-menu: true
+image: assets/images/aboutme.jpg
 ---
 
 <!-- Main -->
