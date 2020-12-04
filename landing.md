@@ -2,7 +2,8 @@
 title: Blog
 layout: landing
 description: 'My musings'
-image: assets/images/pic07.jpg
+image: assets/images/tiles/black_scribbles.jpg
+position: 3
 nav-menu: true
 ---
 

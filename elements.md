@@ -2,7 +2,8 @@
 layout: page
 title: About Me
 nav-menu: true
-image: assets/images/aboutme.jpg
+show_tile: false
+image: assets/images/tiles/girl.jpg
 ---
 
 <!-- Main -->

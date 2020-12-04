@@ -1,5 +1,5 @@
 # site settings
-# title: Forty
+title: Claudia Kho
 # subtitle: by HTML5 UP
 email: claudkho@gmail.com
 description: hi there!
@@ -15,7 +15,7 @@ author:
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 6
+tiles-count: 4
 
 # social settings
 500px_url:

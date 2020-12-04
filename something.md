@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Projects
-description: Cool stuff I've done
-image: assets/images/tiles/blue_tools.jpg
-position: 2
+title: Something Else
+description: Still thinking what to put here
+image: assets/images/tiles/brown_stones.jpg
+position: 4
 nav-menu: true
 ---
 
