@@ -18,7 +18,9 @@ image: assets/images/tiles/girl.jpg
 
 <!-- Content -->
 <h2 id="content">Hi, I'm Claudia!</h2>
-<p><span class="image right"><img src="{% link assets/images/tiles/aboutme.jpg %}" style="width: 80%" alt="" /></span>I'm currently a Master's student in Electrical and Computer Engineering at Carnegie Mellon University, specializing in silicon design and high performance computing. Originally from Singapore, I've been living in Pittsburgh for the past three years. </p>
+<div class="10u$">
+<p><span class="image right"><img src="{% link assets/images/tiles/aboutme.jpg %}" style="width: 90%" alt="" /></span>I'm currently a Master's student in Electrical and Computer Engineering at Carnegie Mellon University, specializing in silicon design and high performance computing. Originally from Singapore, I've been living in Pittsburgh for the past three years. </p>
+</div>
 <div class="row">
 </div>
 
