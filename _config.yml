@@ -1,36 +1,73 @@
-# site settings
-title: Claudia Kho
-# subtitle: by HTML5 UP
-email: claudkho@gmail.com
-description: hi there!
-# baseurl: "/forty-jekyll-theme" # the subpath of your site, e.g. /blog
-url: https://khoclaudia.github.io/
-author:
-# street_address: 1234 Somewhere Road
-# city: Nashville
-# state: TN
-# zip_code: 55555
-# country: United States of America
-# phone: (716) 555-5555
+# Site settings
+title: PHOTORAMA
+email: ""
+description: "Photo Journal"
+url: "https://sunbliss.github.io"
+baseurl: "/photorama"
+facebook_username: ""
+twitter_username: ""
+instagram_username: ""
+github_username:  ""
+deviantart_username: ""
+flickr_username: ""
+discus_shortname: ""
+share: true
 
-# homepage tiles
-tiles-source: pages # accepts "posts" or "pages"
-tiles-count: 4
+# Owner/author information
+owner:
+  name:   photorama
+  avatar: avatar.png
+  favicon: favicon.ico
+  info: photography website template
 
-# social settings
-500px_url:
-facebook_url:
-github_url: https://github.com/khoclaudia
-# gitlab_url: https://gitlab.com/andrewbanchich
-# googleplus_url: https://plus.google.com/u/0/+AndrewBanchich
-# instagram_url: https://instagram.com
-linkedin_url: https://www.linkedin.com/in/khoclaudia
-# pinterest_url:
-# slack_url:
-# twitter_url: https://twitter.com/andrewbanchich
+# Settings for comments helper
+# Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
+# Set 'provider' to false to turn commenting off globally.
+#Set 'provider: false' to disable comments globally.
+# Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
+#
+comments :
+  provider : disqus
+  disqus :
+    short_name : ""
 
-# build settings
+# Internal nav
+nav:
+  - GALLERY: "https://sunbliss.github.io/photorama/gallery/"  
+  - JOURNAL: "https://sunbliss.github.io/photorama/journal/"
+  - ABOUT: "https://sunbliss.github.io/photorama/about/"
+
+# All translation keys
+translations:
+ # 404.html
+  permalink: "/404.html"
+
+# Server
+destination:      	 ./_site
+port:             	 4000
+
+
+# Build settings
 markdown: kramdown
+highlighter: rouge
+permalink: pretty
+paginate: 5
+paginate_path: "/journal/page:num/"
+permalink: "/journal/:title/"
+categories_path: "/journal/category/"
+tags_path: "/journal/tag/"
+gems: 
+ - jekyll-paginate
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
 
-sass:
-  style: compressed
+# SiteMap
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/writing/"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"
