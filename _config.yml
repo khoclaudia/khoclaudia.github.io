@@ -1,73 +1,25 @@
-# Site settings
-title: Claudia Kho
-email: ""
-description: "Photo Journal"
-url: "https://khoclaudia.github.io"
-# baseurl: "/photorama"
-facebook_username: ""
-twitter_username: ""
-instagram_username: ""
-github_username:  ""
-deviantart_username: ""
-flickr_username: ""
-discus_shortname: ""
-share: true
+title:              Clean Blog
+email:              your-email@example.com
+description:        A Blog Theme by Start Bootstrap
+author:             Start Bootstrap
+baseurl:            "/startbootstrap-clean-blog-jekyll"
+url:                "https://startbootstrap.github.io"
 
-# Owner/author information
-owner:
-  name: Claudia
-  avatar: avatar.png
-  favicon: favicon.ico
-  info: photography website template
+# Social Profiles
+twitter_username:   SBootstrap
+github_username:    StartBootstrap
+facebook_username:  StartBootstrap
+instagram_username:  
+linkedin_username:
 
-# Settings for comments helper
-# Set 'provider' to the comment provider you want to use. (i.e.  Disqus, Intense Debate, livefyre, or Facebook Comments)
-# Set 'provider' to false to turn commenting off globally.
-#Set 'provider: false' to disable comments globally.
-# Disable comments for individual pages/posts by specifying 'comments: false' in the page/post YAML Front Matter.
-#
-comments :
-  provider : disqus
-  disqus :
-    short_name : ""
-
-# Internal nav
-nav:
-  - GALLERY: "https://khoclaudia.github.io/gallery/"
-  - JOURNAL: "https://khoclaudia.github.io/journal/"
-  - ABOUT: "https://khoclaudia.github.io/about/"
-
-# All translation keys
-translations:
- # 404.html
-  permalink: "/404.html"
-
-# Server
-destination:      	 ./_site
-port:             	 4000
-
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
 # Build settings
-markdown: kramdown
-highlighter: rouge
-permalink: pretty
-paginate: 5
-paginate_path: "/journal/page:num/"
-permalink: "/journal/:title/"
-categories_path: "/journal/category/"
-tags_path: "/journal/tag/"
-gems:
- - jekyll-paginate
-exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
-
-# SiteMap
-sitemap:
-    file: "/sitemap.xml"
-    exclude:
-        - "/atom.xml"
-        - "/feed.xml"
-        - "/feed/index.xml"
-    include_posts:
-        - "/writing/"
-    change_frequency_name: "change_frequency"
-    priority_name: "priority"
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
